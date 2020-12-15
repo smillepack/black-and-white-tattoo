@@ -1,0 +1,432 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Mariamne"
+    src: url(../fonts/Mariamne.ttf)   
+    font-display: swap
+
+@font-face 
+    font-family: 'Oswald'    
+    src: url(../fonts/Oswald.ttf)
+    font-display: swap
+
+@font-face 
+    font-family: 'Ubuntu'    
+    src: url(../fonts/Ubuntu.ttf)        
+    font-display: swap
+
+
+$bg-white: #efefef
+$bg-black: #1f1f1f
+
+img 
+    width: 100%
+
+.imgIconWidth
+    width: 
+
+
+header
+    width: 100%
+    color: white
+    background: black
+    padding: 20px
+    text-transform: uppercase
+    font-family: Mariamne
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 1.4rem
+
+.headerContainer
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.burgerContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 0
+    a
+        color: white
+        text-decoration: none
+        font-size: 1.2rem
+        font-weight: 500
+        font-family: 'Ubuntu'
+
+
+.disnone
+    display: none
+
+
+#burgerMenu
+    width: 50px
+    background: none
+    border: 0
+    &:enabled
+        outline: none
+
+.headerLogoContainer
+    display: flex 
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.firstThingViewContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    box-shadow: inset 0px 0px 201px 144px rgba(0,0,0,0.99)
+    background-image: url('../images/0.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding-bottom: 10px
+    color: white
+
+.FTVLinksContainer
+    display: flex 
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap 
+    width: 20%
+    &  a
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 10px
+        width: 40px
+        height: 40px
+
+.mailRu
+    text-transform: none
+
+.FTVLogoContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 60%
+
+.someContainer
+    display: flex
+    justify-content: space-around   
+    align-items: center
+
+.FTVThingsContainer
+    font-family: 'Ubuntu'
+    // font-family: "Oswald"
+    width: 210px
+    a 
+        // text-decoration: none
+        color: white
+    & > div, a
+        display: flex 
+        font-weight: bold 
+        font-size: 1.2rem
+        margin: 15px 0
+
+        & > div
+            display: flex
+            justify-content: center
+            align-items: center
+            &:nth-child(1)
+                width: 30px
+                margin-right: 10px
+
+.FTVPhoneContainer, .FTVClock
+    text-transform: uppercase
+
+.desElIcon
+    width: 30px
+    height: 30px
+
+.headSection
+    width: 100%
+    text-align: center
+    background: black
+    padding: 20px
+    font-family: Oswald
+    font-size: 1.2rem
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 1px
+
+.switch
+    display: none
+
+.desElName
+    font-family: Oswald
+    font-weight: 600
+    text-transform: uppercase
+
+.desElDes
+    font-family: Ubuntu
+
+.descriptionContainer
+    display: flex
+    flex-wrap: wrap
+    background: $bg-white
+    justify-content: center
+    padding-bottom: 30px
+
+.desElContainer
+    width: 200px
+    height: 180px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    margin-bottom: 10px
+
+    & div 
+        text-align: center
+
+    & > div
+        margin: 5px 0
+
+.galleryContainer
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    background: #1e1e1e
+
+.galEl
+    width: 50%
+    img
+        display: block
+        object-fit: cover
+        object-position: center
+
+.white
+    color: white
+
+.bg-white
+    background: $bg-white
+
+.mastersContainer
+    display: flex 
+    flex-wrap: wrap
+    background: $bg-white
+    justify-content: center
+    align-items: center
+    padding-bottom: 20px
+
+.master
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 10px
+
+.masterImg
+    img 
+        width: 230px
+        height: 230px
+        object-fit: cover
+        object-position: center
+        border-radius: 5px
+
+.masterName
+    margin: 10px 0
+    font-family: 'Oswald'
+    font-weight: 700
+    font-size: 1.3rem
+    letter-spacing: 1px
+
+.masterBtn
+    background-image: linear-gradient(22deg, #fff4b7 50%, #ffdd27 50%)
+    border-radius: 0
+    border: 0
+    padding: 5px
+
+    button
+        padding: 7px
+        background: $bg-white
+        border: 0
+        cursor: pointer
+        font-family: 'Oswald'
+        font-size: 1.1rem
+
+.black
+    background: black
+    color: white
+
+.contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: black
+    color: white
+    padding-bottom: 20px
+
+    & img 
+        width: 30px
+        margin-right: 10px
+
+.workTime
+    text-transform: uppercase
+
+.contacsContainer
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    font-size: 1.2rem
+    font-family: Ubuntu
+
+    & a 
+        color: white
+
+
+    & > div, a 
+        display: flex 
+        justify-content: center
+        align-items: center
+        margin-top: 12px
+
+
+.googleMapContainer
+    background: black
+
+footer 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    padding: 30px 20px
+    background: black
+    color: white
+    font-family: Mariamne
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 1.4rem
+
+    & img 
+        width: 28px
+
+.footerName
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-transform: uppercase
+
+.footerContainerForLinks
+    display: flex
+
+    a 
+        display: flex
+        margin: 0 5px
+
+.aboutMaster
+    position: absolute
+    visibility: hidden
+    color: white
+    width: 100%
+    height: 101vh
+    display: flex 
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    overflow: auto
+    padding-top: 40px
+    padding-bottom: 20px
+    background: #1b1b1bf2
+    
+.visibility
+    visibility: visible
+
+.aboutMCloseBtn
+    position: fixed
+    right: 5px
+    top: 5px
+    width: 50px
+    height: 50px
+    background: none
+    border: 0   
+    cursor: pointer
+
+    &:enabled        
+        outline: 0
+
+.aboutMImg
+    img 
+        width: 250px
+        height: 250px
+        object-fit: cover
+        border-radius: 5px
+
+.aboutMName
+    color: white
+    font-family: Oswald
+    font-size: 1.4rem
+
+.aboutMLinksContianer
+    display: flex
+    margin: 5px 0
+    img 
+        width: 30px
+        height: 30px
+        margin: 0 5px
+
+.aboutMGallery
+    display: flex
+    flex-wrap: wrap
+    max-width: 900px
+    img 
+        width: 50%
+
+.aboutMMore
+    font-family: Oswald
+    font-size: 1.2rem
+    margin-top: 20px
+    color: white
+
+    a:visited 
+        color: white
+
+
+.scrollOff
+    overflow: hidden
+
+
+@media only screen and (min-width: 600px) 
+    .switch
+        display: flex
+    .switchv2
+        display: none
+    .FTVLogoContainer 
+        width: 40%
+    .galEl
+        width: 25%
+
+@media only screen and (min-width: 900px)
+    
+    header
+        display: flex
+    #burgerMenu
+        display: none
+    .disnone
+        display: flex
+    .disNoneWhenNoBurgerBtn
+        display: none
+    .burgerContainer
+        flex-direction: row
+        a 
+            margin: 0 5px
