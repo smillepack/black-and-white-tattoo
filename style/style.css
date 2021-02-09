@@ -352,7 +352,7 @@ header {
 
 .FTVThingsContainer {
   font-family: 'Ubuntu';
-  width: 210px;
+  width: 220px;
 }
 
 .FTVThingsContainer a {
@@ -778,6 +778,7 @@ footer {
 
 .footerConteiner img {
   width: 28px;
+  height: 28px;
 }
 
 .footerName {
@@ -811,6 +812,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: 5px;
+  width: 28px;
+  height: 28px;
 }
 
 .aboutMaster {
