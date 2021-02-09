@@ -51,8 +51,8 @@ function masterDiv(name) {
         aboutMGallery.append(img)
     }
 
-    let aboutMMore = document.getElementById('aboutMMore')
-    aboutMMore.href = masters[name].instagram
+    // let aboutMMore = document.getElementById('aboutMMore')
+    // aboutMMore.href = masters[name].instagram
     document.body.classList.add('scrollOff')
 }
 
